@@ -7,3 +7,7 @@ The analysis of the XTEA encryption algorithm is crucial for assessing its secur
 
 ## Results of Conv2D neural distinguisher:-
 ![Alt text](Results/combine_2D.png?raw=true "Conv2D")
+
+### Comparison with existing working models:-
+Throughout our analysis, we employed both the Conv1D and Conv2D architectures to differentiate between the rounds of XTEA. By utilizing these designs, we achieved a flawless accuracy of 100% for the fifth round. Additionally, we extended our investigation up to the seventh round. Comparing our findings with those of Bellini et al. in their publication "A Cipher-Agnostic Neural Training Pipeline with Automated Finding of Good Input Differences," we discovered that they obtained an accuracy of 0.5978% for the fifth round using the DBitNet model. Our results clearly demonstrate a significant improvement of 40% in accuracy over the DBitNet model proposed by Bellini et al. Furthermore, while Bellini et al. did not provide results beyond the fifth round, our study successfully distinguished up to the seventh round with high accuracy.
+![Alt text](Results/comparison.png?raw=true "comparison")
